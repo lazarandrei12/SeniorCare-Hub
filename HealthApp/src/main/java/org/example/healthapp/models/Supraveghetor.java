@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "medici")
-public class Medic {
+@Table(name = "supraveghetori")
+public class Supraveghetor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,15 +28,10 @@ public class Medic {
     @Column(name = "prenume")
     private String prenume;
 
-    @Column(name = "specializare")
-    private String specializare;
-
-    @Column(name = "numar_telefon")
-    private String numarTelefon;
-
     @Column(name = "email", unique = true)
     private String email;
 
     @Column(name = "parola")
     private String parola;
 }
+
